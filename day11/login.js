@@ -2,8 +2,8 @@
 
 // 1. 지금 상태 — 이 세 줄의 값을 바꿔 가며 확인합니다
 const isLoggedIn = true;
-const userName = "김오즈";
-const role = "admin"; // "admin" 또는 "member"
+const userName = "신주훈";
+const role = "member"; // "admin" 또는 "member"
 
 // 2. 이름이 비어 있으면 "회원"으로 — || 는 앞의 값이 falsy면 뒤의 값을 돌려줍니다
 const displayName = userName || "회원";
@@ -14,7 +14,7 @@ if (!isLoggedIn) {
 } else if (role === "admin") {
   console.log(`관리자 ${displayName}님, 환영합니다.`);
 } else {
-  console.log(`${displayName}님, 환영합니다.`);
+  console.log(`${displayName}님, 꺼져주세요.`);
 }
 
 // 4. 관리자 메뉴는 로그인한 관리자에게만 — && 는 둘 다 참일 때만 참
