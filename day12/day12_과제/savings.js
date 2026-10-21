@@ -21,7 +21,7 @@ const printPlan = function (monthly) {
 };
 
 // 3. 1년 동안 모이는 돈 — 화살표 함수, 인수를 빠뜨리면 30000
-const yearTotal = (monthly  30000) => monthly * 12;
+const yearTotal = (monthly = 30000) => monthly * 12;
 
 // 4. 모은 돈이 처음으로 target 이상이 되는 달 — 찾으면 멈춤
 function firstMonthOver(monthly, target) {
