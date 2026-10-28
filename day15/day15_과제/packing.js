@@ -7,7 +7,7 @@ const items = [
 ];
 
 // 1. id로 제목을 찾아 글자 바꾸기
-const titleEl = getElementById("list-title");
+const titleEl = document.getElementById("list-title");
 titleEl.textContent = "제주 여행 준비물";
 
 // 2. 준비물마다 li를 만들어 목록에 붙이기
