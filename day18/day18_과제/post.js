@@ -13,7 +13,7 @@ async function showPost() {
     if (!response.ok) {
       throw new Error(`${response.status} — 없는 글입니다`);
     }
-    const post = await response.josn();
+    const post = await response.json();
     titleEl.textContent = post.title;
     bodyEl.textContent = post.body;
   } catch (error) {
