@@ -1,7 +1,7 @@
 // index.js — DAY 20 장표 예제 모음 : index.html에서 도는 예제를 장표 순서대로 모았습니다
 // RUN에 장 번호를 넣고 저장한 뒤 새로고침하면, 그 장의 if 블록 하나만 실행됩니다.
 // 결과는 Console에 찍히고 36 · 44장은 화면에 나옵니다. 주석에 적은 결과는 Chrome에서 실행해 확인한 값입니다.
-const RUN = 21;
+const RUN = 41;
 
 // 8~22장은 JSONPlaceholder에 요청합니다 — 인터넷이 필요합니다
 const BASE_URL = "https://jsonplaceholder.typicode.com";
@@ -273,7 +273,7 @@ if (RUN === 22) {
 
 // 36장 · 새로고침하면 처음 값으로 돌아가는 변수
 // 화면 「누른 횟수」 : +1을 세 번 누르면 3번 → 새로고침하면 0번
-if (RUN === 36) {
+if (RUN === 40) {
   const countEl = document.querySelector("#count");
   let count = 0;
   document.querySelector("#add-btn").addEventListener("click", () => {
